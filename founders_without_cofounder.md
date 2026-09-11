@@ -1,6 +1,6 @@
 # Founders Looking for a Co-Founder
 
-Total applicants: 29 | Without a co-founder: 14
+Total applicants: 31 | Without a co-founder: 16
 
 ---
 
@@ -157,3 +157,25 @@ Total applicants: 29 | Without a co-founder: 14
 - **Contact Details:** 7206198749
 - **Has Co-Founder?** No
 - **Timestamp:** 2026-09-07 17:06:45.911000
+
+## 15. Yashvi Kaushik
+
+- **Idea:** Building the next-generation pet-care platform to bridge the gap between pet parents and reliable care. We’re creating one ecosystem for everyday pet management, instant emergency guidance, veterinary support, and trusted, species-specific information — for pets beyond just dogs and cats.
+- **Branch:** CSE
+- **Enrollment Number:** S24CSEU2300
+- **School:** SCSET
+- **Email:** S24CSEU2300@bennett.edu.in
+- **Contact Details:** 7505788029
+- **Has Co-Founder?** No
+- **Timestamp:** 2026-09-11 (via WhatsApp)
+
+## 16. Mohit (XGuru)
+
+- **Idea:** XGuru is building an AI-powered learning ecosystem combining a marketplace for learners and experts with SaaS products for educators and institutes to manage classes, students, assessments etc.
+- **Branch:** CSE
+- **Enrollment Number:** E23CSEU0136
+- **School:** SCSET
+- **Email:** mohit@xguru.in
+- **Contact Details:** 9311039292
+- **Has Co-Founder?** No
+- **Timestamp:** 2026-09-11 (via WhatsApp)
