@@ -107,7 +107,7 @@ footer.site .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap
   <div class="hero-grid"></div>
   <div class="shell hero-inner">
     <span class="eyebrow">E-Cell Bennett · Co-Founder Matching</span>
-    <h1>Sixteen founders.<br>Looking for a <em>co-founder</em>.</h1>
+    <h1>Nineteen founders.<br>Looking for a <em>co-founder</em>.</h1>
     <p>Every card is a builder from the cohort who is still solo. Open one, read the idea, reach out directly.</p>
   </div>
 </section>
@@ -149,7 +149,10 @@ const founders = [
  {name:"Akanksha Singh",idea:"A SaaS that helps startups and small agencies maintain their things at one place.",branch:"BTech",enroll:"S24CSEU2292",school:"SCSET",email:"s24cseu2292@bennett.edu.in",phone:"9810433989"},
  {name:"Shravan Kumar Sharma",idea:"Prenups + Counseling + Mediation.",branch:"School of Law",enroll:"L26SOLP0014",school:"School of Law",email:"advocateshravansharma@gmail.com",phone:"7206198749"},
  {name:"Yashvi Kaushik",idea:"Building the next-generation pet-care platform to bridge the gap between pet parents and reliable care. One ecosystem for everyday pet management, instant emergency guidance, veterinary support, and trusted, species-specific information — for pets beyond just dogs and cats.",branch:"CSE",enroll:"S24CSEU2300",school:"SCSET",email:"S24CSEU2300@bennett.edu.in",phone:"7505788029"},
- {name:"Mohit",idea:"XGuru is building an AI-powered learning ecosystem combining a marketplace for learners and experts with SaaS products for educators and institutes to manage classes, students, assessments etc.",branch:"CSE",enroll:"E23CSEU0136",school:"SCSET",email:"mohit@xguru.in",phone:"9311039292"}
+ {name:"Mohit",idea:"XGuru is building an AI-powered learning ecosystem combining a marketplace for learners and experts with SaaS products for educators and institutes to manage classes, students, assessments etc.",branch:"CSE",enroll:"E23CSEU0136",school:"SCSET",email:"mohit@xguru.in",phone:"9311039292"},
+ {name:"Arjun",idea:"SOCIOTECH — for content creators and D2C brands frustrated by chaotic social media DMs, SOCIOTECH provides a centralized, data-driven professional ecosystem. It streamlines portfolio discovery, campaign analytics, and secure payments to transform the creator economy into a structured profession. LinkedIn for creators.",branch:"CSE",enroll:"S24CSEU2105",school:"SCSET",email:"",phone:"8791237323"},
+ {name:"Prof.(Dr.) Sanjeev Kumar",idea:"Reimagining how India eats fish — and building the trusted infrastructure to take its extraordinary regional fish traditions to the world.",branch:"Professor of Economics",enroll:"",school:"School of Liberal Arts",email:"sanjeev.kumar@bennett.edu.in",phone:"9811331432"},
+ {name:"Pooja Sharma",idea:"SabzPyaala turns local farm produce into 'edible cups', reducing packaging waste, adding value to farmer's produce and creating a sustainable food experience. (Zero waste + edible experience + farmer value)",branch:"Coordinator, Research and Development Cell",enroll:"",school:"Bennett",email:"pooja.sharma@bennett.edu.in",phone:"9354818641"}
 ];
 
 const grid = document.getElementById('grid'), ov = document.getElementById('ov'), modal = document.getElementById('modal');
@@ -179,11 +182,11 @@ function openCard(f){
     <h2>${f.name}</h2>
     <div class="sub">${f.branch} · ${f.school}</div>
     <div class="row"><small>The Idea</small><p>${f.idea}</p></div>
-    <div class="row"><small>Enrollment Number</small><p>${f.enroll}</p></div>
-    <div class="row"><small>Email</small><a href="mailto:${f.email}">${f.email}</a></div>
+    ${f.enroll ? `<div class="row"><small>Enrollment Number</small><p>${f.enroll}</p></div>` : ''}
+    ${f.email ? `<div class="row"><small>Email</small><a href="mailto:${f.email}">${f.email}</a></div>` : ''}
     <div class="row"><small>Phone</small><a href="tel:${f.phone}">${f.phone}</a></div>
     <div class="actions">
-      <a class="solid-button" href="mailto:${f.email}">Email ${f.name.split(' ')[0]}</a>
+      ${f.email ? `<a class="solid-button" href="mailto:${f.email}">Email ${f.name.split(' ')[0]}</a>` : ''}
       <a class="ghost-button" href="tel:${f.phone}">Call</a>
     </div>`;
   ov.classList.add('on'); document.body.style.overflow = 'hidden';
